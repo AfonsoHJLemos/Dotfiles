@@ -1,0 +1,148 @@
+@import "/home/afonso/dotfiles/mocha/.config/mocha/mocha.css";
+
+* {
+    font-family: "Cascadia Code Nerd Font";
+    font-size: 16px;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+.modules-left {
+    background-color: @base;
+    padding: 0 2px;
+    border-radius: 4px;
+}
+
+#clock.time {
+    background-color: @base;
+    color: @red;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0px 8px;
+    border-radius: 4px;
+}
+
+#workspaces.left,
+#workspaces.right,
+#tray {
+    background-color: @mantle;
+    margin: 4px 0px;
+}
+
+#workspaces.left,
+#tray {
+    border-radius: 8px 0px 0px 8px;
+}
+
+#workspaces.right {
+    border-radius: 0px 8px 8px 0px;
+}
+
+#workspaces button,
+#tray * {
+    padding: 0 8px;
+}
+
+#workspaces button:hover {
+    background: inherit;
+    text-shadow: inherit;
+    box-shadow: inherit;
+    outline: inherit;
+    border: inherit;
+    border-radius: inherit;
+}
+
+#workspaces button.active {
+    color: @text;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+}
+
+#disk,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#backlight,
+#battery,
+#clock.date,
+#custom-power {
+    padding: 0 8px;
+}
+
+#disk,
+#battery {
+    color: @yellow;
+}
+
+#cpu,
+#backlight {
+    color: @peach;
+}
+
+#memory,
+#pulseaudio {
+    color: @maroon;
+}
+
+#temperature,
+#network {
+    color: @red;
+}
+
+#network,
+#pulseaudio,
+#backlight,
+#battery,
+#clock.date,
+#custom-power {
+    background-color: @base;
+}
+
+#network {
+    border-radius: 4px 0px 0px 4px;
+    padding-left: 10px;
+}
+
+#clock.date,
+#custom-power {
+    color: @text;
+    font-weight: bold;
+}
+
+#custom-power {
+    border-radius: 0px 4px 4px 0px;
+    padding-right: 10px;
+}
+
+menu {
+    background: @mantle;
+    color: @text;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+menuitem {
+    border-radius: 4px;
+    padding: 4px 0px;
+}
+
+menuitem:nth-child(1):hover {
+    background: @red;
+    color: @mantle;
+}
+
+menuitem:nth-child(2):hover {
+    background: @peach;
+    color: @mantle;
+}
+
+menuitem:nth-child(3):hover {
+    background: @yellow;
+    color: @mantle;
+}
